@@ -1,9 +1,9 @@
 ---
- - name: Playbook to install NGINX
+ - name: Playbook to install ThirdParties
    hosts: devops_cluster
    become: true
    tasks:
-    - name: Ansible apt install nginx
+    - name: Ansible apt install Package
       apt:
-        name: nginx
+        name: chromium
         state: latest
