@@ -1,0 +1,9 @@
+---
+ - name: Playbook to install NGINX
+   hosts: devops_cluster
+   become: true
+   tasks:
+    - name: Ansible apt install nginx
+      apt:
+        name: nginx
+        state: latest
