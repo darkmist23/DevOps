@@ -5,5 +5,5 @@
    tasks:
     - name: Ansible apt install Package
       apt:
-        name: chromium
-        state: latest
+        name: tmux
+        state: present
